@@ -34,6 +34,7 @@ COPY --from=mcs-build --chown=miner:miner /stuff/spigot-${SPIGOT_VER}.jar /home/
 ENV JVM_MEM 1G
 USER miner:miner
 WORKDIR /opt/mcs
+LABEL "server.version"="${SPIGOT_VER}"
 
 CMD /home/miner/start.sh
 
