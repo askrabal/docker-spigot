@@ -1,4 +1,4 @@
-FROM openjdk:16-alpine AS mcs-build
+FROM openjdk:17-alpine AS mcs-build
 
 USER 0
 
