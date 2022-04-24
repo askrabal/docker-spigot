@@ -19,7 +19,7 @@ FROM openjdk:16-alpine AS mcs-install
 ARG SPIGOT_VER=1.17.1
 USER 0
 
-RUN adduser --disabled-password --uid 1002 miner
+RUN adduser --disabled-password --uid 25565 miner
 RUN mkdir -p /opt/mcs
 RUN chown miner:miner /opt/mcs
 
