@@ -14,7 +14,7 @@ WORKDIR /stuff
 
 RUN java -jar BuildTools.jar --rev ${SPIGOT_VER}
 
-FROM openjdk:16-alpine AS mcs-install
+FROM openjdk:18-alpine AS mcs-install
 
 ARG SPIGOT_VER=1.17.1
 USER 0
